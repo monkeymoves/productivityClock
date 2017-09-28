@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Encode+Sans+Expanded");
+body {
+  font-size: 2rem;
+  font-family: 'Encode Sans Expanded', sans-serif;
+  background-image: url("../mountain.jpg");
+  color: #fafafa;
+  padding-top: 4em;
+}
+@media (max-width: 600px) {
+  body {
+    padding-top: 10px;
+  }
+}
+
+.wrapper {
+  width: 95%;
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.settings {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+.settings .break,
+.settings .work {
+  flex: 1 1 33%;
+}
+.settings h3 {
+  font-size: 0.8em;
+  font-weight: 300;
+  margin-bottom: 0.2em;
+}
+.settings p {
+  display: inline-block;
+  font-size: 1.8em;
+  margin: 0.1em;
+  width: 80px;
+}
+.settings button {
+  background: none;
+  border: none;
+  box-shadow: none;
+  font-size: 1.2em;
+  color: #fafafa;
+  cursor: pointer;
+  transform: translateY(-8px);
+}
+.settings button:hover {
+  color: #eb4a3e;
+}
+@media screen and (max-width: 480px) {
+  .settings {
+    flex-direction: column;
+  }
+}
+
+.timer {
+  border: 1px solid #a2aaae;
+  border-radius: 100%;
+  margin: 50px auto;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+.timer.breaktime {
+  border: 2px solid #00ff00;
+}
+.timer.worktime {
+  border: 2px solid #eb4a3e;
+}
