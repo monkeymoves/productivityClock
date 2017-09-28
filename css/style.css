@@ -3,6 +3,8 @@ body {
   font-size: 2rem;
   font-family: 'Encode Sans Expanded', sans-serif;
   background-image: url("../mountain.jpg");
+        background-repeat:no-repeat;
+
 background-size: cover;
   color: #fafafa;
   padding-top: 4em;
